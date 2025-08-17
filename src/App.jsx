@@ -8,6 +8,7 @@ import ReportsPage from "./pages/ReportsPage";
 import TeamPerformancePage from "./pages/TeamPerformancePage";
 import HelpCenterPage from "./pages/HelpCenterPage";
 import SettingsPage from "./pages/SettingsPage";
+import DataTestPage from "./pages/DataTestPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
 
         {/* Settings Route */}
         <Route path="/settings" element={<SettingsPage />} />
+
+        {/* Data Test Route */}
+        <Route path="/data-test" element={<DataTestPage />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFoundPage />} />
